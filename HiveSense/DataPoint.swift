@@ -10,31 +10,77 @@ import Foundation
 
 public class DataPoint {
     var time: UInt32 = 0
-    var type: String = ""
-    var val: Double = -1.0
+    var temp: Double = -1.0
+    var humidity: Double = -1.0
     
-    func getVal() -> Double {
-        return val
+    func getTemp() -> Double {
+        return temp
+    }
+    
+    func getHumid() -> Double {
+        return humidity
     }
     
     func getTime() -> UInt32 {
         return time
     }
     
-    func getType() -> String {
-        return type
-    }
     
     func setTime(ntime: UInt32) {
         self.time = ntime
     }
     
-    func setType(ntype: String) {
-        type = ntype
+    func setTemp(nval: Double) {
+        temp = nval
     }
     
-    func setVal(nval: Double) {
-        val = nval
+    func setHumid(nval: Double) {
+        humidity = nval
+    }
+    
+    func toString() -> String {
+        var s = "{"
+        s += "timestamp:\(getTime()),temperature:\(getTemp()),humidity:\(getHumid())}"
+        return s
+    }
+    
+    public class func toDataPoint(s: String) -> DataPoint {
+        var point: DataPoint = DataPoint()
+        var commas: [String]
+        commas = s.characters.split{$0 == ","}.map(String.init)
+        print(commas)
+        for str in commas {
+            print("\n")
+            var colons: [String] = str.characters.split{$0 == ":"}.map(String.init)
+            if (colons[0] == "temperature") {
+                point.setTemp(Double(colons[1])!)
+            } else if (colons[0] == "timestamp") {
+                point.setTime(UInt32(colons[1])!)
+            } else if (colons[0] == "humidity") {
+                //point.setHumid(Double(colons[1])!)
+            }
+            print(colons)
+            
+        }
+        return DataPoint()
     }
 
 }
+
+/*
+ 
+ {
+ info:{
+ id:
+ },
+ datapoints:
+ [
+ {timestamp: <timestamp>,
+ tempature: <value>,
+ humidity:<value>
+ }
+ 
+ ]
+ }
+ 
+ */

@@ -13,10 +13,11 @@ class HivesViewController: UIViewController {
     @IBOutlet var staticHiveLabel: UILabel!
     var connected = false;
     @IBOutlet var retryButton: UIButton!
+    @IBOutlet var tempLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLabel()
+        populateScreen()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +27,7 @@ class HivesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "Hives"
-        
+        populateScreen()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -35,8 +36,8 @@ class HivesViewController: UIViewController {
     }
     
     @IBAction func retryPressed(sender: AnyObject) {
-        setLabel()
-        
+        populateScreen()
+        //get data from server
         
     }
     
@@ -49,6 +50,12 @@ class HivesViewController: UIViewController {
             staticHiveLabel.text = "Connecting...";
             connected = false
         }
+    }
+    
+    func populateScreen() {
+        // set labels with data
+        setLabel()
+        
     }
     
 }

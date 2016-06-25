@@ -22,6 +22,15 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "HiveSense"
+        var testPoint: DataPoint = DataPoint()
+        testPoint.setTemp(1.0)
+        testPoint.setHumid(2.0)
+        testPoint.setTime(4037345092)
+        
+        print(DataPoint.toDataPoint(testPoint.toString()).getTemp())
+        
+        
+        
         
     }
     
