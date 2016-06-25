@@ -16,6 +16,7 @@
 		9BE94D0B1D1EF07F00DD39FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE94D091D1EF07F00DD39FF /* Main.storyboard */; };
 		9BE94D0D1D1EF32A00DD39FF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */; };
 		9BE94D0F1D1EF34000DD39FF /* HivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */; };
+		9BE94D111D1EF5C000DD39FF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D101D1EF5C000DD39FF /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9BE94D0A1D1EF07F00DD39FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HivesViewController.swift; sourceTree = "<group>"; };
+		9BE94D101D1EF5C000DD39FF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9B726F501D1ED7E10070A9B6 /* Info.plist */,
 				9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */,
 				9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */,
+				9BE94D101D1EF5C000DD39FF /* Reachability.swift */,
 			);
 			path = HiveSense;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				9B726F471D1ED7E10070A9B6 /* ViewController.swift in Sources */,
 				9BE94D0D1D1EF32A00DD39FF /* DataViewController.swift in Sources */,
 				9BE94D0F1D1EF34000DD39FF /* HivesViewController.swift in Sources */,
+				9BE94D111D1EF5C000DD39FF /* Reachability.swift in Sources */,
 				9B726F451D1ED7E10070A9B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

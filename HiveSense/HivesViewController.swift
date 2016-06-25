@@ -10,9 +10,15 @@ import UIKit
 
 class HivesViewController: UIViewController {
 
+    @IBOutlet var staticHiveLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if (Reachability.isConnectedToNetwork()) {
+            // alert that there is no internet connection
+            staticHiveLabel.text = "Hive 1"
+            
+        }
         // Do any additional setup after loading the view.
     }
 
