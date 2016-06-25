@@ -30,7 +30,8 @@ class HivesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "Hives"
-        populateScreen()        
+        populateScreen()
+        DataPuller.getJSON("memes")
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
