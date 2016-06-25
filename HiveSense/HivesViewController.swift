@@ -11,15 +11,12 @@ import UIKit
 class HivesViewController: UIViewController {
 
     @IBOutlet var staticHiveLabel: UILabel!
+    var connected = false;
+    @IBOutlet var retryButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (Reachability.isConnectedToNetwork()) {
-            // alert that there is no internet connection
-            staticHiveLabel.text = "Hive 1"
-            
-        }
-        // Do any additional setup after loading the view.
+        setLabel()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,4 +33,22 @@ class HivesViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    
+    @IBAction func retryPressed(sender: AnyObject) {
+        setLabel()
+        
+        
+    }
+    
+    func setLabel() {
+        if (Reachability.isConnectedToNetwork()) {
+            staticHiveLabel.text = "Hive 1"
+            connected = true
+            
+        } else {
+            staticHiveLabel.text = "Connecting...";
+            connected = false
+        }
+    }
+    
 }

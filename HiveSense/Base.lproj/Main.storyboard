@@ -77,11 +77,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-zE-Ew9">
+                                <rect key="frame" x="464" y="72" width="131" height="30"/>
+                                <state key="normal" title="Retry Connection"/>
+                                <connections>
+                                    <action selector="retryPressed:" destination="gcm-7e-bs0" eventType="touchUpInside" id="GH2-qd-SkE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hives" id="X7g-Ui-68t"/>
                     <connections>
+                        <outlet property="retryButton" destination="eXz-zE-Ew9" id="9vT-PQ-f4s"/>
                         <outlet property="staticHiveLabel" destination="NBr-04-ImS" id="8aT-ye-Ldd"/>
                     </connections>
                 </viewController>

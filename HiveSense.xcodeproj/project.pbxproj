@@ -17,6 +17,9 @@
 		9BE94D0D1D1EF32A00DD39FF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */; };
 		9BE94D0F1D1EF34000DD39FF /* HivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */; };
 		9BE94D111D1EF5C000DD39FF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D101D1EF5C000DD39FF /* Reachability.swift */; };
+		9BE94D131D1EFBDC00DD39FF /* JSONFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D121D1EFBDC00DD39FF /* JSONFormatter.swift */; };
+		9BE94D151D1EFC3B00DD39FF /* DataPuller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D141D1EFC3B00DD39FF /* DataPuller.swift */; };
+		9BE94D171D1EFFFE00DD39FF /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE94D161D1EFFFE00DD39FF /* DataPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HivesViewController.swift; sourceTree = "<group>"; };
 		9BE94D101D1EF5C000DD39FF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		9BE94D121D1EFBDC00DD39FF /* JSONFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFormatter.swift; sourceTree = "<group>"; };
+		9BE94D141D1EFC3B00DD39FF /* DataPuller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPuller.swift; sourceTree = "<group>"; };
+		9BE94D161D1EFFFE00DD39FF /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				9BE94D0C1D1EF32A00DD39FF /* DataViewController.swift */,
 				9BE94D0E1D1EF34000DD39FF /* HivesViewController.swift */,
 				9BE94D101D1EF5C000DD39FF /* Reachability.swift */,
+				9BE94D121D1EFBDC00DD39FF /* JSONFormatter.swift */,
+				9BE94D141D1EFC3B00DD39FF /* DataPuller.swift */,
+				9BE94D161D1EFFFE00DD39FF /* DataPoint.swift */,
 			);
 			path = HiveSense;
 			sourceTree = "<group>";
@@ -267,8 +276,11 @@
 			files = (
 				9B726F471D1ED7E10070A9B6 /* ViewController.swift in Sources */,
 				9BE94D0D1D1EF32A00DD39FF /* DataViewController.swift in Sources */,
+				9BE94D131D1EFBDC00DD39FF /* JSONFormatter.swift in Sources */,
 				9BE94D0F1D1EF34000DD39FF /* HivesViewController.swift in Sources */,
 				9BE94D111D1EF5C000DD39FF /* Reachability.swift in Sources */,
+				9BE94D151D1EFC3B00DD39FF /* DataPuller.swift in Sources */,
+				9BE94D171D1EFFFE00DD39FF /* DataPoint.swift in Sources */,
 				9B726F451D1ED7E10070A9B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
