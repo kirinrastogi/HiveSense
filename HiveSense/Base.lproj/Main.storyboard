@@ -43,7 +43,7 @@
         <!--Data-->
         <scene sceneID="Osi-ug-8DA">
             <objects>
-                <viewController id="aUJ-56-Y4Z" sceneMemberID="viewController">
+                <viewController id="aUJ-56-Y4Z" customClass="DataViewController" customModule="HiveSense" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vvj-Ej-fQS"/>
                         <viewControllerLayoutGuide type="bottom" id="Mai-Oe-zGn"/>
@@ -62,7 +62,7 @@
         <!--Hives-->
         <scene sceneID="jzn-hL-7oi">
             <objects>
-                <viewController id="gcm-7e-bs0" sceneMemberID="viewController">
+                <viewController id="gcm-7e-bs0" customClass="HivesViewController" customModule="HiveSense" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wV1-hO-1Nb"/>
                         <viewControllerLayoutGuide type="bottom" id="oXX-rs-Zkq"/>
@@ -70,6 +70,14 @@
                     <view key="view" contentMode="scaleToFill" id="WJO-jq-ZhC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1l-42-GHr">
+                                <rect key="frame" x="58" y="130" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hives" id="X7g-Ui-68t"/>

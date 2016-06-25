@@ -14,6 +14,8 @@
 		9B726F4F1D1ED7E10070A9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B726F4D1D1ED7E10070A9B6 /* LaunchScreen.storyboard */; };
 		9B726F5A1D1ED7E10070A9B6 /* HiveSenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F591D1ED7E10070A9B6 /* HiveSenseTests.swift */; };
 		9B726F651D1ED7E10070A9B6 /* HiveSenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F641D1ED7E10070A9B6 /* HiveSenseUITests.swift */; };
+		9B726F731D1EE40D0070A9B6 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F721D1EE40D0070A9B6 /* DataViewController.swift */; };
+		9B726F751D1EE4190070A9B6 /* HivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F741D1EE4190070A9B6 /* HivesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 		9B726F411D1ED7E10070A9B6 /* HiveSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiveSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B726F441D1ED7E10070A9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B726F461D1ED7E10070A9B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B726F491D1ED7E10070A9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B726F491D1ED7E10070A9B6 /* Base */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B726F4B1D1ED7E10070A9B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B726F4E1D1ED7E10070A9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B726F501D1ED7E10070A9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		9B726F601D1ED7E10070A9B6 /* HiveSenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiveSenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B726F641D1ED7E10070A9B6 /* HiveSenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiveSenseUITests.swift; sourceTree = "<group>"; };
 		9B726F661D1ED7E10070A9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B726F721D1EE40D0070A9B6 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		9B726F741D1EE4190070A9B6 /* HivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HivesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				9B726F4B1D1ED7E10070A9B6 /* Assets.xcassets */,
 				9B726F4D1D1ED7E10070A9B6 /* LaunchScreen.storyboard */,
 				9B726F501D1ED7E10070A9B6 /* Info.plist */,
+				9B726F721D1EE40D0070A9B6 /* DataViewController.swift */,
+				9B726F741D1EE4190070A9B6 /* HivesViewController.swift */,
 			);
 			path = HiveSense;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B726F471D1ED7E10070A9B6 /* ViewController.swift in Sources */,
+				9B726F731D1EE40D0070A9B6 /* DataViewController.swift in Sources */,
+				9B726F751D1EE4190070A9B6 /* HivesViewController.swift in Sources */,
 				9B726F451D1ED7E10070A9B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				9B726F6B1D1ED7E10070A9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B726F6C1D1ED7E10070A9B6 /* Build configuration list for PBXNativeTarget "HiveSenseTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				9B726F6E1D1ED7E10070A9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B726F6F1D1ED7E10070A9B6 /* Build configuration list for PBXNativeTarget "HiveSenseUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				9B726F711D1ED7E10070A9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
