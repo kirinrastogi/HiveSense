@@ -15,6 +15,7 @@ public class JSONFormatter {
         // todo
         jsonArr[0] = ""
         
+        
         return [DataPoint()]
     }
     

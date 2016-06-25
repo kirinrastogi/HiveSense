@@ -48,9 +48,7 @@ public class DataPoint {
         var point: DataPoint = DataPoint()
         var commas: [String]
         commas = s.characters.split{$0 == ","}.map(String.init)
-        print(commas)
         for str in commas {
-            print("\n")
             var colons: [String] = str.characters.split{$0 == ":"}.map(String.init)
             if (colons[0] == "temperature") {
                 point.setTemp(Double(colons[1])!)
@@ -59,10 +57,9 @@ public class DataPoint {
             } else if (colons[0] == "humidity") {
                 //point.setHumid(Double(colons[1])!)
             }
-            print(colons)
             
         }
-        return DataPoint()
+        return point
     }
 
 }

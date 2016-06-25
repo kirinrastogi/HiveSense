@@ -11,9 +11,11 @@ import UIKit
 class HivesViewController: UIViewController {
 
     @IBOutlet var staticHiveLabel: UILabel!
-    var connected = false;
+    var connected = false
+    var received = false
     @IBOutlet var retryButton: UIButton!
     @IBOutlet var tempLabel: UILabel!
+    var latestPoint: DataPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +57,28 @@ class HivesViewController: UIViewController {
     func populateScreen() {
         // set labels with data
         setLabel()
+        setValueLabels()
         
+    }
+    
+    func dataReceived(set: [DataPoint]!) {
+        if (set != nil) {
+            received = true
+            // get latest data point and set it
+            var recent: DataPoint = set[0]
+            for p in set {
+                if (p.getTime() < recent.getTime()) {
+                    recent = p
+                }
+            }
+            latestPoint = recent
+        }
+    }
+    
+    func setValueLabels() {
+        if (received) {
+            tempLabel.text = "\(latestPoint.getTemp())"
+        }
     }
     
 }
