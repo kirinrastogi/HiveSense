@@ -10,22 +10,21 @@ import Foundation
 
 public class JSONFormatter {
     
-    public class func TDJSONtoDataPointArray(json: String) -> [DataPoint] {
-        var jsonArr: [String]!
-        // todo
-        jsonArr[0] = ""
-        
+    public class func TDJSONtoDataPointArray(json: NSDictionary) -> [DataPoint] {
+        json["temperature"]
         
         return [DataPoint()]
     }
     
+    /*
     public class func DataPointArraytoTDJSON(set: [DataPoint]) -> String {
         var json = ""
         for p in set {
-            //json +=
+            
         }
         return ""
     }
+ */
     
 }
 

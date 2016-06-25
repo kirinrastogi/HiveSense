@@ -11,19 +11,22 @@ import Foundation
 public class DataPuller {
     
     public class func getJSON(url: String) -> NSDictionary {
-        let urlPath: String = "http://192.168.2.59:3000/beehive/hives/Unit1"
-        let url: NSURL = NSURL(string: urlPath)!
-        let request1: NSMutableURLRequest = NSMutableURLRequest(URL: url)
         var toReturn: NSDictionary!
         
-        request1.HTTPMethod = "GET"
-        let queue:NSOperationQueue = NSOperationQueue()
+        let urlPath: String = "http://192.168.2.21:3000/beehive/hives/Unit1"
+        let url: NSURL = NSURL(string: urlPath)!
+        let request1: NSURLRequest = NSURLRequest(URL: url)
+        let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
         
-        NSURLConnection.sendAsynchronousRequest(request1, queue: queue, completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+        // NO NIL FAILSAFE YET IM SORRY DONALD BAILEY
+        
+        do{
+            
+            let dataVal = try NSURLConnection.sendSynchronousRequest(request1, returningResponse: response)
             
             do {
-                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
-                    print("ASynchronous\(jsonResult)")
+                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal, options: []) as? NSDictionary {
+                    print("\(jsonResult)")
                     toReturn = jsonResult
                 }
             } catch let error as NSError {
@@ -31,7 +34,11 @@ public class DataPuller {
             }
             
             
-        })
+            
+        }catch let error as NSError
+        {
+            print(error.localizedDescription)
+        }
         
         return toReturn
     }

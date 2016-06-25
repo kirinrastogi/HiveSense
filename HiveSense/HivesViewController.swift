@@ -21,6 +21,7 @@ class HivesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         populateScreen()
+        
     }
 
     override func didReceiveMemoryWarning() {
