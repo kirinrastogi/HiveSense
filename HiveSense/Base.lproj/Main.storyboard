@@ -114,12 +114,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connecting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyR-hK-TuN">
+                                <rect key="frame" x="162" y="159" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hives" id="X7g-Ui-68t"/>
                     <connections>
                         <outlet property="retryButton" destination="eXz-zE-Ew9" id="9vT-PQ-f4s"/>
+                        <outlet property="soundLabel" destination="dyR-hK-TuN" id="NFs-dh-z1J"/>
                         <outlet property="staticHiveLabel" destination="NBr-04-ImS" id="8aT-ye-Ldd"/>
                         <outlet property="tempLabel" destination="x2c-u6-eHC" id="pMq-OT-rwF"/>
                     </connections>

@@ -10,6 +10,7 @@ import UIKit
 
 class HivesViewController: UIViewController {
 
+    @IBOutlet var soundLabel: UILabel!
     @IBOutlet var staticHiveLabel: UILabel!
     var connected = false
     var received = false
@@ -29,7 +30,7 @@ class HivesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "Hives"
-        populateScreen()
+        populateScreen()        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
