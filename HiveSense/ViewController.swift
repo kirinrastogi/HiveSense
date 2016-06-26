@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var blueImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view!.backgroundColor = UIColorFromHex(16764263, alpha: 1.0)
+        blueImage.backgroundColor = UIColorFromHex(6802943, alpha: 1.0)
         navigationController!.navigationBar.barTintColor = UIColorFromHex(16764263, alpha: 1.1)
     }
 

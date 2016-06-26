@@ -9,9 +9,10 @@
 import Foundation
 
 public class DataPoint {
-    var time: UInt32 = 0
+    var time: UInt64 = 0
     var temp: Double = -1.0
     var humidity: Double = -1.0
+    var sound: Double = -1.0
     
     func getTemp() -> Double {
         return temp
@@ -21,12 +22,16 @@ public class DataPoint {
         return humidity
     }
     
-    func getTime() -> UInt32 {
+    func getTime() -> UInt64 {
         return time
+    }
+
+    func getSound() -> Double {
+        return sound
     }
     
     
-    func setTime(ntime: UInt32) {
+    func setTime(ntime: UInt64) {
         self.time = ntime
     }
     
@@ -37,30 +42,17 @@ public class DataPoint {
     func setHumid(nval: Double) {
         humidity = nval
     }
+
+    func setSound(nval: Double) {
+        sound = nval
+    }
     
     func toString() -> String {
         var s = "{"
         s += "timestamp:\(getTime()),temperature:\(getTemp()),humidity:\(getHumid())}"
         return s
     }
-    
-    public class func toDataPoint(s: String) -> DataPoint {
-        var point: DataPoint = DataPoint()
-        var commas: [String]
-        commas = s.characters.split{$0 == ","}.map(String.init)
-        for str in commas {
-            var colons: [String] = str.characters.split{$0 == ":"}.map(String.init)
-            if (colons[0] == "temperature") {
-                point.setTemp(Double(colons[1])!)
-            } else if (colons[0] == "timestamp") {
-                point.setTime(UInt32(colons[1])!)
-            } else if (colons[0] == "humidity") {
-                //point.setHumid(Double(colons[1])!)
-            }
-            
-        }
-        return point
-    }
+
 
 }
 

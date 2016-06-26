@@ -23,7 +23,6 @@ public class DataPuller {
         do{
             
             let dataVal = try NSURLConnection.sendSynchronousRequest(request1, returningResponse: response)
-            
             do {
                 if let jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal, options: []) as? NSDictionary {
                     print("\(jsonResult)")
