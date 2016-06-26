@@ -15,8 +15,11 @@ class HivesViewController: UIViewController {
     var connected = false
     var received = false
     @IBOutlet var retryButton: UIButton!
+    @IBOutlet var humidLabel: UILabel!
     @IBOutlet var tempLabel: UILabel!
-    var latestPoint: DataPoint!
+    @IBOutlet var timeLabel: UILabel!
+    var latestPoint: Int = 0
+    var dataPoints: [DataPoint]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,10 @@ class HivesViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "Hives"
+        dataPoints = JSONFormatter.TDJSONtoDataPointArray(DataPuller.getJSON("memes"))
+        latestPoint = 0
+        received = true
         populateScreen()
-        JSONFormatter.TDJSONtoDataPointArray(DataPuller.getJSON("memes"))
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -43,7 +48,7 @@ class HivesViewController: UIViewController {
     
     @IBAction func retryPressed(sender: AnyObject) {
         populateScreen()
-        JSONFormatter.TDJSONtoDataPointArray(DataPuller.getJSON("memes"))
+        latestPoint += 1
         //get data from server
         
     }
@@ -66,7 +71,7 @@ class HivesViewController: UIViewController {
         
     }
     
-    func dataReceived(set: [DataPoint]!) {
+   /* func dataReceived(set: [DataPoint]!) {
         if (set != nil) {
             received = true
             // get latest data point and set it
@@ -78,11 +83,15 @@ class HivesViewController: UIViewController {
             }
             latestPoint = recent
         }
-    }
+    }*/
     
     func setValueLabels() {
         if (received) {
-            tempLabel.text = "\(latestPoint.getTemp())"
+            tempLabel.text = "\(dataPoints[latestPoint].getTemp())"
+            humidLabel.text = "\(dataPoints[latestPoint].getHumid())"
+            soundLabel.text = "\(dataPoints[latestPoint].getSound())"
+            timeLabel.text = "\(dataPoints[latestPoint].getTime())"
+            
         }
     }
     

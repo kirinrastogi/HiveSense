@@ -10,7 +10,7 @@ import Foundation
 
 public class JSONFormatter {
     
-    static let size: Int = 4
+    static let size: Int = 20
     
     public class func TDJSONtoDataPointArray(json: NSDictionary) -> [DataPoint] {
         print("\n ------------")
@@ -70,6 +70,19 @@ public class JSONFormatter {
                     temp.setHumid(d2)
                 }
  */
+                
+               /* var d2: Double!
+                if let check3 = element[i]!["humidity"]!! as? Double {
+                    print("converted hdouble")
+                    d2 = element[i]!["timestamp"]!! as! Double
+                } else {
+                    d2 = nil
+                    print("humid failed")
+                }
+                
+                if (d2 != nil) {
+                    temp.setHumid(d2)
+                }*/
                 
                 data.append(temp)
                 
