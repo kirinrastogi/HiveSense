@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view!.backgroundColor = UIColorFromHex(16764263, alpha: 1.0)
+        navigationController!.navigationBar.barTintColor = UIColorFromHex(16764263, alpha: 1.1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +28,15 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         navigationItem.title = nil
+        navigationItem.titleView?.backgroundColor = UIColorFromHex(16764263, alpha: 1.0)
+    }
+    
+    func UIColorFromHex(rgbValue:UInt32, alpha:Double)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
     
 }

@@ -13,28 +13,63 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Green">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhG-XE-423">
-                                <rect key="frame" x="277" y="115" width="46" height="30"/>
+                                <rect key="frame" x="354" y="186" width="46" height="30"/>
                                 <state key="normal" title="Data"/>
                                 <connections>
                                     <segue destination="aUJ-56-Y4Z" kind="show" identifier="dataSegue" id="Q8n-Wi-K96"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caa-vF-bPK">
-                                <rect key="frame" x="101" y="115" width="46" height="30"/>
+                                <rect key="frame" x="97" y="186" width="46" height="30"/>
                                 <state key="normal" title="Hives"/>
                                 <connections>
                                     <segue destination="gcm-7e-bs0" kind="show" id="Tj6-Pg-Xlw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p7-FR-Qhi">
+                                <rect key="frame" x="616" y="186" width="41" height="30"/>
+                                <state key="normal" title="Alerts"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-li-abO">
+                                <rect key="frame" x="97" y="814" width="68" height="30"/>
+                                <state key="normal" title="Wheather"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-on-trt">
+                                <rect key="frame" x="357" y="814" width="41" height="30"/>
+                                <state key="normal" title="Setup"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXA-rl-zJv">
+                                <rect key="frame" x="549" y="814" width="108" height="30"/>
+                                <state key="normal" title="System Monitor"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="local_wheather.png" translatesAutoresizingMaskIntoConstraints="NO" id="cce-ao-7zh">
+                                <rect key="frame" x="97" y="701" width="75" height="105"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="set_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-07-bhD">
+                                <rect key="frame" x="335" y="701" width="85" height="105"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="system_monitor.png" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-F3-aMh">
+                                <rect key="frame" x="552" y="724" width="102" height="59"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hives.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vm1-4e-FGz">
+                                <rect key="frame" x="70" y="83" width="100" height="95"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="data.png" translatesAutoresizingMaskIntoConstraints="NO" id="ibG-Ja-huf">
+                                <rect key="frame" x="333" y="84" width="89" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alerts.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ff-fI-Oy8">
+                                <rect key="frame" x="595" y="79" width="83" height="103"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dBF-qA-Fq6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +84,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Mai-Oe-zGn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t8h-kx-aT0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -68,7 +103,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oXX-rs-Zkq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WJO-jq-ZhC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connecting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBr-04-ImS">
@@ -154,4 +189,13 @@
             <point key="canvasLocation" x="424" y="-295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alerts.png" width="88" height="103"/>
+        <image name="data.png" width="88" height="94"/>
+        <image name="hives.png" width="100" height="94"/>
+        <image name="local_wheather.png" width="73" height="103"/>
+        <image name="set_up.png" width="85" height="105"/>
+        <image name="system_monitor.png" width="101" height="59"/>
+    </resources>
+    <color key="tintColor" red="0.082905775204712207" green="0.034018853383348827" blue="0.02409778140205121" alpha="1" colorSpace="calibratedRGB"/>
 </document>

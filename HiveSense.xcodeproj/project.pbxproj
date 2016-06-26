@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B363E831D1F8EAD00F30971 /* local_wheather.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E821D1F8EAD00F30971 /* local_wheather.png */; };
+		9B363E851D1F8F3000F30971 /* set_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E841D1F8F3000F30971 /* set_up.png */; };
+		9B363E871D1F8FD800F30971 /* system_monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E861D1F8FD800F30971 /* system_monitor.png */; };
+		9B363E891D1F904700F30971 /* hives.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E881D1F904700F30971 /* hives.png */; };
+		9B363E8B1D1F912D00F30971 /* data.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E8A1D1F912D00F30971 /* data.png */; };
+		9B363E8D1D1F91B100F30971 /* alerts.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B363E8C1D1F91B100F30971 /* alerts.png */; };
 		9B726F451D1ED7E10070A9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F441D1ED7E10070A9B6 /* AppDelegate.swift */; };
 		9B726F471D1ED7E10070A9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B726F461D1ED7E10070A9B6 /* ViewController.swift */; };
 		9B726F4C1D1ED7E10070A9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B726F4B1D1ED7E10070A9B6 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B363E821D1F8EAD00F30971 /* local_wheather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = local_wheather.png; path = img/local_wheather.png; sourceTree = SOURCE_ROOT; };
+		9B363E841D1F8F3000F30971 /* set_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = set_up.png; path = img/set_up.png; sourceTree = SOURCE_ROOT; };
+		9B363E861D1F8FD800F30971 /* system_monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = system_monitor.png; path = img/system_monitor.png; sourceTree = SOURCE_ROOT; };
+		9B363E881D1F904700F30971 /* hives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hives.png; path = img/hives.png; sourceTree = SOURCE_ROOT; };
+		9B363E8A1D1F912D00F30971 /* data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = data.png; path = img/data.png; sourceTree = SOURCE_ROOT; };
+		9B363E8C1D1F91B100F30971 /* alerts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alerts.png; path = img/alerts.png; sourceTree = SOURCE_ROOT; };
 		9B726F411D1ED7E10070A9B6 /* HiveSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiveSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B726F441D1ED7E10070A9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B726F461D1ED7E10070A9B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +121,13 @@
 		9B726F431D1ED7E10070A9B6 /* HiveSense */ = {
 			isa = PBXGroup;
 			children = (
+				9B363E8A1D1F912D00F30971 /* data.png */,
+				9B363E881D1F904700F30971 /* hives.png */,
+				9B363E861D1F8FD800F30971 /* system_monitor.png */,
+				9B363E841D1F8F3000F30971 /* set_up.png */,
+				9B363E821D1F8EAD00F30971 /* local_wheather.png */,
 				9BE94D091D1EF07F00DD39FF /* Main.storyboard */,
+				9B363E8C1D1F91B100F30971 /* alerts.png */,
 				9B726F441D1ED7E10070A9B6 /* AppDelegate.swift */,
 				9B726F461D1ED7E10070A9B6 /* ViewController.swift */,
 				9B726F4B1D1ED7E10070A9B6 /* Assets.xcassets */,
@@ -211,6 +229,7 @@
 				TargetAttributes = {
 					9B726F401D1ED7E10070A9B6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KRX4D4LAKC;
 					};
 					9B726F541D1ED7E10070A9B6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -250,6 +269,12 @@
 				9BE94D0B1D1EF07F00DD39FF /* Main.storyboard in Resources */,
 				9B726F4F1D1ED7E10070A9B6 /* LaunchScreen.storyboard in Resources */,
 				9B726F4C1D1ED7E10070A9B6 /* Assets.xcassets in Resources */,
+				9B363E891D1F904700F30971 /* hives.png in Resources */,
+				9B363E871D1F8FD800F30971 /* system_monitor.png in Resources */,
+				9B363E8B1D1F912D00F30971 /* data.png in Resources */,
+				9B363E851D1F8F3000F30971 /* set_up.png in Resources */,
+				9B363E831D1F8EAD00F30971 /* local_wheather.png in Resources */,
+				9B363E8D1D1F91B100F30971 /* alerts.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,10 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HiveSense/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twelvedot.HiveSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -436,10 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HiveSense/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.twelvedot.HiveSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
